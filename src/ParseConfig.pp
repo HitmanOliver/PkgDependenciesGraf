@@ -7,7 +7,7 @@ uses Classes, SysUtils, Process, StrUtils;
 
 const
     ParamsCount = 6;
-    parseYamlScript = '../parseYAML.sh';
+    parseYamlScript = 'parseYAML.sh';
 
 type
     ConfigParamsElem = record
@@ -30,7 +30,7 @@ begin
     P := TProcess.Create(nil);
     Output := TStringList.Create;
     P.Executable := '/bin/bash';
-    P.Parameters.Add(parseYamlScript);
+    P.Parameters.Add(ExtractFilePath(ParamStr(0)) + '../' +parseYamlScript);
     P.Parameters.Add(filename);
     P.Options := [poWaitOnExit, poUsePipes];
     P.Execute;
