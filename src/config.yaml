@@ -1,4 +1,4 @@
-package_name: expres
+package_name: express
 repo_url: https://registry.npmjs.org/
 repo_mode: online
 output_file: graph.png

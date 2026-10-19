@@ -103,7 +103,8 @@ begin
             begin
                 DepsObj := SpecificVersionObj.Find('dependencies') as TJSONObject;
                 for i := 0 to DepsObj.Count - 1 do
-                    Result.Add(DepsObj.Names[i]);
+                    Result.Add(DepsObj.Names[i] + ' ' + 
+                        '(' + DepsObj.Items[i].AsString + ')');
             end;
             
         finally
