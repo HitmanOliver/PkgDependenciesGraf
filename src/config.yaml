@@ -1,7 +1,6 @@
-package_name: express
-repo_url: https://registry.npmjs.org
+package_name: expres
+repo_url: https://registry.npmjs.org/
 repo_mode: online
 output_file: graph.png
 ascii_tree: true
-filter_substring: ef
-
+filter_substring: test
