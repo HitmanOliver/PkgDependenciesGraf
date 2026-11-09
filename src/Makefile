@@ -6,7 +6,7 @@ FPCFLAGS = -Mobjfpc -Sh -O2 -FEbin/
 MAIN     = PkgDependsGraf.pas
 TARGET   = PkgDependsGraf
 
-MODULES  = ParseConfig.pp
+MODULES  = ParseConfig.pp DependeciesGraf.pp
 
 all: $(TARGET)
 
