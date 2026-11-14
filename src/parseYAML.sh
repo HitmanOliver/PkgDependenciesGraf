@@ -44,8 +44,8 @@ for RK in $REAL_KEYS; do
             ;;
         repo_mode)
             case "$VALUE" in
-                online|locale) ;;
-                *) echo "repo_mode: expected online/locale, got: $VALUE" >&2; exit 4 ;;
+                online|test) ;;
+                *) echo "repo_mode: expected online/test, got: $VALUE" >&2; exit 4 ;;
             esac
             ;;
     esac
